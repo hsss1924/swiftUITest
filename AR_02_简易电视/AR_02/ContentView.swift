@@ -31,7 +31,7 @@ struct ARViewContainer: UIViewRepresentable {
     
     
     func spawnTV(in arView: ARView){
-        let dimensions: SIMD3<Float> = [1.23, 0.046, 0.7]
+        let dimensions: SIMD3<Float> = [1.88, 0.046, 1.05]
         
         //create TV Housing
         let housingMesh = MeshResource.generateBox(size: dimensions)
