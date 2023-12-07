@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		231F183FACEC6564E9B2B973 /* Pods_BadmintonPEP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162EBE9BC0D2F9A78774DD56 /* Pods_BadmintonPEP.framework */; };
 		AE0C4EBB2B2054CC004DDC91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0C4EBA2B2054CC004DDC91 /* AppDelegate.swift */; };
 		AE0C4EBF2B2054CC004DDC91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0C4EBE2B2054CC004DDC91 /* ViewController.swift */; };
 		AE0C4EC22B2054CC004DDC91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0C4EC02B2054CC004DDC91 /* Main.storyboard */; };
 		AE0C4EC42B2054CE004DDC91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0C4EC32B2054CE004DDC91 /* Assets.xcassets */; };
 		AE0C4EC72B2054CE004DDC91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0C4EC52B2054CE004DDC91 /* LaunchScreen.storyboard */; };
+		AE0C4FFF2B21B877004DDC91 /* board.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0C4FFE2B21B877004DDC91 /* board.swift */; };
+		AE0C50032B21B8E6004DDC91 /* board.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0C50012B21B8E6004DDC91 /* board.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		162EBE9BC0D2F9A78774DD56 /* Pods_BadmintonPEP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BadmintonPEP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CC82635C1707690CEC1D5F0 /* Pods-BadmintonPEP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BadmintonPEP.debug.xcconfig"; path = "Target Support Files/Pods-BadmintonPEP/Pods-BadmintonPEP.debug.xcconfig"; sourceTree = "<group>"; };
+		88E048823E1054522B4758A4 /* Pods-BadmintonPEP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BadmintonPEP.release.xcconfig"; path = "Target Support Files/Pods-BadmintonPEP/Pods-BadmintonPEP.release.xcconfig"; sourceTree = "<group>"; };
 		AE0C4EB72B2054CC004DDC91 /* BadmintonPEP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BadmintonPEP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0C4EBA2B2054CC004DDC91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE0C4EBE2B2054CC004DDC91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		AE0C4EC32B2054CE004DDC91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE0C4EC62B2054CE004DDC91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE0C4EC82B2054CE004DDC91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0C4FFE2B21B877004DDC91 /* board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = board.swift; sourceTree = "<group>"; };
+		AE0C50022B21B8E6004DDC91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BadmintonPEP/Base.lproj/board.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				231F183FACEC6564E9B2B973 /* Pods_BadmintonPEP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B958D4E4718A204A020035E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CC82635C1707690CEC1D5F0 /* Pods-BadmintonPEP.debug.xcconfig */,
+				88E048823E1054522B4758A4 /* Pods-BadmintonPEP.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		35D0D943DE144BA1187B4A3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				162EBE9BC0D2F9A78774DD56 /* Pods_BadmintonPEP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE0C4EAE2B2054CC004DDC91 = {
 			isa = PBXGroup;
 			children = (
 				AE0C4EB92B2054CC004DDC91 /* BadmintonPEP */,
 				AE0C4EB82B2054CC004DDC91 /* Products */,
+				0B958D4E4718A204A020035E /* Pods */,
+				35D0D943DE144BA1187B4A3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +85,22 @@
 			children = (
 				AE0C4EBA2B2054CC004DDC91 /* AppDelegate.swift */,
 				AE0C4EBE2B2054CC004DDC91 /* ViewController.swift */,
+				AE0C50002B21B87D004DDC91 /* board */,
 				AE0C4EC02B2054CC004DDC91 /* Main.storyboard */,
 				AE0C4EC32B2054CE004DDC91 /* Assets.xcassets */,
 				AE0C4EC52B2054CE004DDC91 /* LaunchScreen.storyboard */,
 				AE0C4EC82B2054CE004DDC91 /* Info.plist */,
 			);
 			path = BadmintonPEP;
+			sourceTree = "<group>";
+		};
+		AE0C50002B21B87D004DDC91 /* board */ = {
+			isa = PBXGroup;
+			children = (
+				AE0C50012B21B8E6004DDC91 /* board.storyboard */,
+				AE0C4FFE2B21B877004DDC91 /* board.swift */,
+			);
+			path = board;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE0C4ECB2B2054CE004DDC91 /* Build configuration list for PBXNativeTarget "BadmintonPEP" */;
 			buildPhases = (
+				FC52FBCEFE3614BB4662ACAD /* [CP] Check Pods Manifest.lock */,
 				AE0C4EB32B2054CC004DDC91 /* Sources */,
 				AE0C4EB42B2054CC004DDC91 /* Frameworks */,
 				AE0C4EB52B2054CC004DDC91 /* Resources */,
+				45F70FDB3FDD4D91526994B8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,10 +166,53 @@
 				AE0C4EC72B2054CE004DDC91 /* LaunchScreen.storyboard in Resources */,
 				AE0C4EC42B2054CE004DDC91 /* Assets.xcassets in Resources */,
 				AE0C4EC22B2054CC004DDC91 /* Main.storyboard in Resources */,
+				AE0C50032B21B8E6004DDC91 /* board.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45F70FDB3FDD4D91526994B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BadmintonPEP/Pods-BadmintonPEP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BadmintonPEP/Pods-BadmintonPEP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BadmintonPEP/Pods-BadmintonPEP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC52FBCEFE3614BB4662ACAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BadmintonPEP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE0C4EB32B2054CC004DDC91 /* Sources */ = {
@@ -137,6 +221,7 @@
 			files = (
 				AE0C4EBF2B2054CC004DDC91 /* ViewController.swift in Sources */,
 				AE0C4EBB2B2054CC004DDC91 /* AppDelegate.swift in Sources */,
+				AE0C4FFF2B21B877004DDC91 /* board.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +242,14 @@
 				AE0C4EC62B2054CE004DDC91 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AE0C50012B21B8E6004DDC91 /* board.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE0C50022B21B8E6004DDC91 /* Base */,
+			);
+			name = board.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -283,6 +376,7 @@
 		};
 		AE0C4ECC2B2054CE004DDC91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CC82635C1707690CEC1D5F0 /* Pods-BadmintonPEP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,8 +388,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,6 +406,7 @@
 		};
 		AE0C4ECD2B2054CE004DDC91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88E048823E1054522B4758A4 /* Pods-BadmintonPEP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,8 +418,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

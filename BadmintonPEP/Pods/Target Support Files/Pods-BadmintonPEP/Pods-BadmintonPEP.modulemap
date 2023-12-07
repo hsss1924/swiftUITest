@@ -1,0 +1,6 @@
+framework module Pods_BadmintonPEP {
+  umbrella header "Pods-BadmintonPEP-umbrella.h"
+
+  export *
+  module * { export * }
+}
